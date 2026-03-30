@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="KANAL PEMUDA – Website kepemudaan yang aktif di bidang sosial, budaya, dan pemberdayaan masyarakat."
+    />
+    <title>KANAL PEMUDA – Website Purwosari</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,600&family=DM+Sans:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ═══════════ NAVBAR ═══════════ -->
+    <header class="navbar" id="navbar">
+      <div class="nav-inner container">
+        <a href="#hero" class="brand">
+          <img src="logoPurwosari.ico" alt="Nama Logo" class="logo-header" />
+          <!-- <span class="brand-emoji">🌿</span> -->
+          <span>KANAL<strong>PEMUDA</strong></span>
+        </a>
+
+        <nav class="nav-links" id="nav-links">
+          <a href="#tentang" class="nav-link">Tentang</a>
+          <a href="#anggota" class="nav-link">Anggota</a>
+          <a href="#galeri" class="nav-link">Galeri</a>
+          <a href="#anggaran" class="nav-link">Anggaran</a>
+          <a href="#kontak" class="nav-link">Kontak</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="admin.html" class="btn-admin-link" title="Dashboard Admin">
+            <i class="ri-dashboard-3-line"></i>
+            <span>Admin</span>
+          </a>
+          <button
+            class="hamburger"
+            id="hamburger"
+            aria-label="Buka menu"
+            aria-expanded="false"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Nav Drawer -->
+    <div class="nav-drawer" id="nav-drawer" aria-hidden="true">
+      <a href="#tentang" class="drawer-link">Tentang</a>
+      <a href="#anggota" class="drawer-link">Anggota</a>
+      <a href="#galeri" class="drawer-link">Galeri</a>
+      <a href="#anggaran" class="drawer-link">Anggaran</a>
+      <a href="#kontak" class="drawer-link">Kontak</a>
+      <a href="admin.html" class="drawer-link drawer-admin">
+        <i class="ri-dashboard-3-line"></i> Dashboard Admin
+      </a>
+    </div>
+    <div class="nav-overlay" id="nav-overlay"></div>
+
+    <main>
+      <!-- ═══════════ HERO ═══════════ -->
+      <section class="hero" id="hero">
+        <div class="hero-bg">
+          <div class="hero-orb orb-1"></div>
+          <div class="hero-orb orb-2"></div>
+          <div class="hero-orb orb-3"></div>
+          <div class="hero-grid"></div>
+        </div>
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-eyebrow fade-in">
+              🏡 Pemuda - Pemudi Dukuh Purwosari
+            </div>
+            <h1 class="hero-title fade-in">
+              Generasi Muda,<br />
+              <em>Penggerak Perubahan</em>
+            </h1>
+            <p class="hero-desc fade-in">
+              Bersama membangun kepemudaan yang kuat, kreatif, dan berdaya saing
+              melalui kegiatan positif, gotong royong, dan transparansi penuh,
+              demi perubahan di masa depan.
+            </p>
+            <div class="hero-cta fade-in">
+              <a href="#anggota" class="btn btn-solid">Kenali Kami</a>
+              <a href="#galeri" class="btn btn-outline-white">Lihat Kegiatan</a>
+            </div>
+            <div class="hero-stats fade-in">
+              <div class="hero-stat">
+                <b class="count" data-to="1000">0</b>
+                <span>Anggota Aktif</span>
+              </div>
+              <div class="hero-stat-sep"></div>
+              <div class="hero-stat">
+                <b class="count" data-to="1000">0</b>
+                <span>Kegiatan / Tahun</span>
+              </div>
+              <div class="hero-stat-sep"></div>
+              <div class="hero-stat">
+                <b class="count" data-to="70">0</b>
+                <span>Tahun Berdiri</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-image fade-in">
+            <div class="hero-card-stack">
+              <div class="hcard hcard-1">
+                <i class="ri-team-fill"></i>
+                <span>1000 Anggota Aktif</span>
+              </div>
+              <div class="hcard hcard-2">
+                <i class="ri-trophy-fill"></i>
+                <span>100 Penghargaan</span>
+              </div>
+              <div class="hcard hcard-3">
+                <i class="ri-heart-fill"></i>
+                <span>Pelayanan Terbaik</span>
+              </div>
+              <div class="hero-badge-main">
+                <img
+                  src="logoPurwosari.ico"
+                  alt="Nama Logo"
+                  class="logo-header-nav"
+                />
+                <span>KANAL PEMUDA</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════ TENTANG ═══════════ -->
+      <section class="tentang section-pad" id="tentang">
+        <div class="container">
+          <div class="tentang-wrap">
+            <div class="tentang-left reveal">
+              <div class="pill">Siapa Kami</div>
+              <h2 class="section-heading">
+                Organisasi pemuda<br />
+                <em>yang tumbuh bersama</em><br />
+                masyarakat
+              </h2>
+              <p>
+                <strong>KANAL PEMUDA</strong> adalah organisasi kepemudaan yang
+                bergerak aktif dalam bidang sosial, budaya, olahraga, dan
+                pemberdayaan ekonomi di tingkat desa. Kami percaya pemuda adalah
+                tulang punggung kemajuan bangsa.
+              </p>
+              <p>
+                Dengan semangat gotong royong dan inovasi, kami menyelenggarakan
+                berbagai program berdampak langsung — dari pelatihan
+                keterampilan hingga kegiatan lingkungan hidup.
+              </p>
+              <a
+                href="#kontak"
+                class="btn btn-solid"
+                style="margin-top: 1rem; display: inline-flex"
+              >
+                Bergabung Sekarang <i class="ri-arrow-right-line"></i>
+              </a>
+            </div>
+            <div class="tentang-right reveal">
+              <div class="nilai-grid">
+                <div class="nilai-card">
+                  <div
+                    class="nilai-icon"
+                    style="background: #e8f5ee; color: #1a6b3a"
+                  >
+                    <i class="ri-heart-3-fill"></i>
+                  </div>
+                  <strong>Gotong Royong</strong>
+                  <p>Bekerja sama demi kepentingan bersama</p>
+                </div>
+                <div class="nilai-card">
+                  <div
+                    class="nilai-icon"
+                    style="background: #fef3c7; color: #b45309"
+                  >
+                    <i class="ri-lightbulb-fill"></i>
+                  </div>
+                  <strong>Inovasi</strong>
+                  <p>Solusi kreatif untuk tantangan nyata</p>
+                </div>
+                <div class="nilai-card">
+                  <div
+                    class="nilai-icon"
+                    style="background: #ede9fe; color: #6d28d9"
+                  >
+                    <i class="ri-shield-check-fill"></i>
+                  </div>
+                  <strong>Transparansi</strong>
+                  <p>Terbuka dan jujur kepada masyarakat</p>
+                </div>
+                <div class="nilai-card">
+                  <div
+                    class="nilai-icon"
+                    style="background: #dbeafe; color: #1d4ed8"
+                  >
+                    <i class="ri-seedling-fill"></i>
+                  </div>
+                  <strong>Keberlanjutan</strong>
+                  <p>Program yang memberi dampak jangka panjang</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════ ANGGOTA ═══════════ -->
+      <section
+        class="anggota section-pad"
+        id="anggota"
+        style="background: var(--bg2)"
+      >
+        <div class="container">
+          <div class="section-header reveal">
+            <div class="pill">Profil Pengurus</div>
+            <h2 class="section-heading centered">
+              Pengurus &amp; Anggota <em>Aktif 2023–2026</em>
+            </h2>
+            <p class="section-sub">
+              Mereka yang dengan bangga mewakili dan melayani masyarakat.
+            </p>
+          </div>
+
+          <!-- Filter -->
+          <div class="filter-row reveal" role="tablist">
+            <button
+              class="chip active"
+              data-filter="all"
+              role="tab"
+              aria-selected="true"
+            >
+              Semua
+            </button>
+            <button
+              class="chip"
+              data-filter="pengurus"
+              role="tab"
+              aria-selected="false"
+            >
+              Pengurus Inti
+            </button>
+            <button
+              class="chip"
+              data-filter="divisi"
+              role="tab"
+              aria-selected="false"
+            >
+              Divisi
+            </button>
+            <button
+              class="chip"
+              data-filter="anggota"
+              role="tab"
+              aria-selected="false"
+            >
+              Anggota
+            </button>
+          </div>
+
+          <!-- Cards -->
+          <div class="member-grid" id="member-grid" role="list"></div>
+
+          <!-- Modal profil -->
+          <div
+            class="overlay"
+            id="member-modal"
+            hidden
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="mm-name"
+          >
+            <div class="modal-box">
+              <button class="modal-close-btn" id="mm-close">
+                <i class="ri-close-line"></i>
+              </button>
+              <div id="mm-content"></div>
+            </div>
+          </div>
+
+          <!-- Modal upload foto anggota -->
+          <div
+            class="overlay"
+            id="upload-modal"
+            hidden
+            role="dialog"
+            aria-modal="true"
+          >
+            <div class="modal-box modal-sm">
+              <button class="modal-close-btn" id="um-close">
+                <i class="ri-close-line"></i>
+              </button>
+              <div class="upload-header">
+                <div class="upload-avatar" id="um-avatar"></div>
+                <div>
+                  <p class="upload-name" id="um-name"></p>
+                  <p class="upload-role" id="um-role"></p>
+                </div>
+              </div>
+              <div
+                class="dropzone"
+                id="um-dropzone"
+                tabindex="0"
+                role="button"
+                aria-label="Upload foto profil"
+              >
+                <input type="file" id="um-file" accept="image/*" hidden />
+                <div class="dropzone-hint" id="um-hint">
+                  <i class="ri-camera-line"></i>
+                  <span>Klik atau seret foto ke sini</span>
+                  <small>PNG, JPG, WEBP · maks. 5 MB</small>
+                </div>
+              </div>
+              <div class="upload-actions">
+                <button class="btn btn-solid" id="um-save" disabled>
+                  <i class="ri-save-line"></i> Simpan
+                </button>
+                <button class="btn btn-danger-outline" id="um-remove" hidden>
+                  <i class="ri-delete-bin-line"></i> Hapus Foto
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════ GALERI ═══════════ -->
+      <section class="galeri section-pad" id="galeri">
+        <div class="container">
+          <div class="section-header reveal">
+            <div class="pill">Dokumentasi</div>
+            <h2 class="section-heading centered">Galeri <em>Kegiatan</em></h2>
+            <p class="section-sub">
+              Jejak aktivitas dan kontribusi nyata kami untuk masyarakat.
+            </p>
+          </div>
+
+          <!-- Filter -->
+          <div class="filter-row reveal" role="tablist">
+            <button
+              class="chip active"
+              data-gfilter="all"
+              role="tab"
+              aria-selected="true"
+            >
+              Semua
+            </button>
+            <button
+              class="chip"
+              data-gfilter="sosial"
+              role="tab"
+              aria-selected="false"
+            >
+              Sosial
+            </button>
+            <button
+              class="chip"
+              data-gfilter="budaya"
+              role="tab"
+              aria-selected="false"
+            >
+              Budaya
+            </button>
+            <button
+              class="chip"
+              data-gfilter="olahraga"
+              role="tab"
+              aria-selected="false"
+            >
+              Olahraga
+            </button>
+            <button
+              class="chip"
+              data-gfilter="pendidikan"
+              role="tab"
+              aria-selected="false"
+            >
+              Pendidikan
+            </button>
+          </div>
+
+          <!-- Panel admin galeri (hanya saat admin login) -->
+          <div class="admin-galeri-panel" id="admin-galeri-panel" hidden>
+            <div class="panel-title">
+              <i class="ri-image-add-line"></i> Tambah &amp; Kelola Foto
+              <span class="admin-pill">Admin</span>
+            </div>
+            <div class="panel-body">
+              <div
+                class="dropzone"
+                id="gal-dropzone"
+                tabindex="0"
+                role="button"
+                aria-label="Upload foto galeri"
+              >
+                <input
+                  type="file"
+                  id="gal-file"
+                  accept="image/*"
+                  multiple
+                  hidden
+                />
+                <div class="dropzone-hint" id="gal-hint">
+                  <i class="ri-image-add-2-line"></i>
+                  <span>Klik atau seret foto ke sini</span>
+                  <small
+                    >Bisa pilih banyak file · PNG, JPG, WEBP · maks. 5 MB</small
+                  >
+                </div>
+                <div class="dz-previews" id="gal-previews"></div>
+              </div>
+              <div class="gal-meta">
+                <div class="form-group">
+                  <label>Judul Kegiatan</label>
+                  <input
+                    type="text"
+                    id="gal-judul"
+                    placeholder="Cth: Bakti Sosial 2024"
+                  />
+                </div>
+                <div class="form-group">
+                  <label>Tanggal</label>
+                  <input type="date" id="gal-tanggal" />
+                </div>
+                <div class="form-group">
+                  <label>Kategori</label>
+                  <select id="gal-kat">
+                    <option value="sosial">Sosial</option>
+                    <option value="budaya">Budaya</option>
+                    <option value="olahraga">Olahraga</option>
+                    <option value="pendidikan">Pendidikan</option>
+                  </select>
+                </div>
+                <button class="btn btn-solid w-full" id="gal-save" disabled>
+                  <i class="ri-upload-cloud-2-line"></i> Simpan ke Galeri
+                </button>
+              </div>
+            </div>
+            <div class="panel-manage">
+              <p class="panel-manage-title">
+                Foto tersimpan <span class="count-pill" id="gal-count">0</span>
+              </p>
+              <div class="thumb-grid" id="gal-thumbs"></div>
+            </div>
+          </div>
+
+          <!-- Grid foto -->
+          <div class="galeri-grid" id="galeri-grid" role="list"></div>
+
+          <!-- Lightbox -->
+          <div
+            class="lightbox"
+            id="lightbox"
+            hidden
+            role="dialog"
+            aria-modal="true"
+          >
+            <button class="lb-btn lb-close-btn" id="lb-close">
+              <i class="ri-close-line"></i>
+            </button>
+            <button class="lb-btn lb-nav" id="lb-prev">
+              <i class="ri-arrow-left-s-line"></i>
+            </button>
+            <div class="lb-content" id="lb-content"></div>
+            <button class="lb-btn lb-nav" id="lb-next">
+              <i class="ri-arrow-right-s-line"></i>
+            </button>
+            <div class="lb-caption" id="lb-caption"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════ ANGGARAN ═══════════ -->
+      <section
+        class="anggaran section-pad"
+        id="anggaran"
+        style="background: var(--bg2)"
+      >
+        <div class="container">
+          <div class="section-header reveal">
+            <div class="pill">Transparansi</div>
+            <h2 class="section-heading centered">Laporan <em>Anggaran</em></h2>
+            <p class="section-sub">
+              Kami berkomitmen pada keterbukaan pengelolaan keuangan demi
+              kepercayaan masyarakat.
+            </p>
+          </div>
+
+          <!-- Summary cards -->
+          <div class="budget-summary reveal">
+            <div class="budget-card income">
+              <i class="ri-arrow-down-circle-fill"></i>
+              <div>
+                <span>Total Pemasukan</span>
+                <strong id="total-income">Rp 0</strong>
+              </div>
+            </div>
+            <div class="budget-card expense">
+              <i class="ri-arrow-up-circle-fill"></i>
+              <div>
+                <span>Total Pengeluaran</span>
+                <strong id="total-expense">Rp 0</strong>
+              </div>
+            </div>
+            <div class="budget-card balance">
+              <i class="ri-wallet-3-fill"></i>
+              <div>
+                <span>Saldo Tersisa</span>
+                <strong id="total-balance">Rp 0</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="anggaran-body reveal">
+            <!-- Chart -->
+            <div class="chart-box">
+              <h3 class="box-title">Distribusi Pengeluaran</h3>
+              <canvas
+                id="budget-chart"
+                width="280"
+                height="280"
+                aria-label="Diagram anggaran"
+                role="img"
+              ></canvas>
+              <div id="budget-legend" class="budget-legend"></div>
+            </div>
+            <!-- Tabel -->
+            <div class="table-box">
+              <div class="table-box-head">
+                <h3 class="box-title">
+                  Rincian Transaksi
+                  <span id="periode-label" class="periode-tag"></span>
+                </h3>
+                <select id="periode-select" class="sel-small">
+                  <option value="2023">Tahun 2023</option>
+                  <option value="2026">Tahun 2026</option>
+                </select>
+              </div>
+              <div class="table-wrap">
+                <table class="trx-table" aria-label="Tabel transaksi">
+                  <thead>
+                    <tr>
+                      <th>Tanggal</th>
+                      <th>Keterangan</th>
+                      <th class="hide-mobile">Kategori</th>
+                      <th>Tipe</th>
+                      <th class="tr">Jumlah</th>
+                    </tr>
+                  </thead>
+                  <tbody id="trx-tbody"></tbody>
+                </table>
+              </div>
+              <p class="table-info">
+                <i class="ri-information-line"></i>
+                Laporan keuangan diaudit secara berkala oleh tim internal.
+              </p>
+              <a href="admin.html" class="btn btn-solid btn-sm">
+                <i class="ri-external-link-line"></i> Kelola di Dashboard Admin
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════ KONTAK ═══════════ -->
+      <section class="kontak section-pad" id="kontak">
+        <div class="container">
+          <div class="section-header reveal">
+            <div class="pill">Hubungi Kami</div>
+            <h2 class="section-heading centered">
+              Ada pertanyaan atau <em>ingin bergabung?</em>
+            </h2>
+          </div>
+
+          <div class="kontak-wrap">
+            <div class="kontak-info reveal">
+              <div class="kontak-item">
+                <div class="k-icon"><i class="ri-map-pin-2-fill"></i></div>
+                <div>
+                  <strong>Alamat Sekretariat</strong>
+                  <span
+                    >Jl. Raya Desa No. 10, RT 02/RW 03,<br />Desa Maju, Kec.
+                    Sejahtera, Kab. Makmur</span
+                  >
+                </div>
+              </div>
+              <div class="kontak-item">
+                <div class="k-icon"><i class="ri-whatsapp-fill"></i></div>
+                <div>
+                  <strong>WhatsApp</strong>
+                  <a href="https://wa.me/6281234567890">+62 812-3456-7890</a>
+                </div>
+              </div>
+              <div class="kontak-item">
+                <div class="k-icon"><i class="ri-mail-fill"></i></div>
+                <div>
+                  <strong>Email</strong>
+                  <a href="mailto:kanalpemuda@email.com"
+                    >kanalpemuda@email.com</a
+                  >
+                </div>
+              </div>
+              <div class="kontak-item">
+                <div class="k-icon"><i class="ri-time-fill"></i></div>
+                <div>
+                  <strong>Jam Operasional</strong>
+                  <span>Senin – Sabtu, 08.00 – 17.00 WIB</span>
+                </div>
+              </div>
+              <div class="sosmed-row">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener"
+                  class="sosmed-btn"
+                  aria-label="Instagram KANAL PEMUDA"
+                  ><i class="ri-instagram-line"></i
+                ></a>
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener"
+                  class="sosmed-btn"
+                  aria-label="Facebook KANAL PEMUDA"
+                  ><i class="ri-facebook-fill"></i
+                ></a>
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener"
+                  class="sosmed-btn"
+                  aria-label="YouTube KANAL PEMUDA"
+                  ><i class="ri-youtube-fill"></i
+                ></a>
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener"
+                  class="sosmed-btn"
+                  aria-label="TikTok KANAL PEMUDA"
+                  ><i class="ri-tiktok-line"></i
+                ></a>
+              </div>
+            </div>
+
+            <form class="kontak-form reveal" id="kontak-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="f-nama"
+                    >Nama Lengkap <span class="req">*</span></label
+                  >
+                  <input
+                    type="text"
+                    id="f-nama"
+                    placeholder="Nama Anda"
+                    autocomplete="name"
+                  />
+                  <span class="field-error" id="e-nama"></span>
+                </div>
+                <div class="form-group">
+                  <label for="f-email">Email <span class="req">*</span></label>
+                  <input
+                    type="email"
+                    id="f-email"
+                    placeholder="email@contoh.com"
+                    autocomplete="email"
+                  />
+                  <span class="field-error" id="e-email"></span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="f-subjek">Subjek</label>
+                <input
+                  type="text"
+                  id="f-subjek"
+                  placeholder="Topik pesan Anda"
+                />
+              </div>
+              <div class="form-group">
+                <label for="f-pesan">Pesan <span class="req">*</span></label>
+                <textarea
+                  id="f-pesan"
+                  rows="5"
+                  placeholder="Tulis pesan Anda di sini…"
+                ></textarea>
+                <span class="field-error" id="e-pesan"></span>
+              </div>
+              <button type="submit" class="btn btn-solid w-full">
+                <i class="ri-send-plane-2-fill"></i> Kirim Pesan
+              </button>
+              <div class="form-ok" id="form-ok" hidden>
+                <i class="ri-checkbox-circle-fill"></i> Pesan berhasil dikirim!
+                Kami akan segera merespons.
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ═══════════ FOOTER ═══════════ -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <div class="brand">
+            <img src="logoPurwosari.ico" alt="Nama Logo" class="logo-footer" />
+            <!-- <span class="brand-emoji">🌿</span> -->
+            <span>KANAL<strong>PEMUDA</strong></span>
+          </div>
+          <p>
+            Pemuda dan Pemudi Dukuh Purwosari<br />Bersatu, Berkarya, Berdampak.
+          </p>
+          <div class="sosmed-row" style="margin-top: 1rem">
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener"
+              class="sosmed-btn sm"
+              aria-label="Instagram"
+              ><i class="ri-instagram-line"></i
+            ></a>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener"
+              class="sosmed-btn sm"
+              aria-label="Facebook"
+              ><i class="ri-facebook-fill"></i
+            ></a>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener"
+              class="sosmed-btn sm"
+              aria-label="YouTube"
+              ><i class="ri-youtube-fill"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <p class="footer-col-title">Navigasi</p>
+          <a href="#tentang">Tentang Kami</a>
+          <a href="#anggota">Profil Anggota</a>
+          <a href="#galeri">Galeri Kegiatan</a>
+          <a href="#anggaran">Transparansi Anggaran</a>
+          <a href="#kontak">Kontak</a>
+        </div>
+        <div class="footer-col">
+          <p class="footer-col-title">Kontak</p>
+          <span><i class="ri-phone-line"></i> +62 812-3456-7890</span>
+          <span
+            ><i class="ri-mail-line"></i>
+            <a href="mailto:kanalpemuda@gmail.com" style="color: inherit"
+              >kanalpemuda@gmail.com</a
+            ></span
+          >
+          <span
+            ><i class="ri-map-pin-line"></i> Dukuh Purwosari, Kec. Tonjong</span
+          >
+          <a href="admin.html" class="footer-admin-link"
+            ><i class="ri-dashboard-3-line"></i> Dashboard Admin</a
+          >
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          © <span id="year"></span> KANAL PEMUDA – Organisasi Kepemudaan Dukuh
+          Purwosari. Dibuat dengan ❤️ untuk masyarakat.
+        </p>
+      </div>
+    </footer>
+
+    <button class="back-top" id="back-top" aria-label="Ke atas" hidden>
+      <i class="ri-arrow-up-line"></i>
+    </button>
+
+    <!-- Admin quick-mode toggle -->
+    <div class="admin-bar" id="admin-bar" hidden>
+      <i class="ri-shield-check-fill"></i>
+      <span>Mode Admin Aktif</span>
+      <button id="admin-logout">
+        <i class="ri-logout-box-line"></i> Keluar
+      </button>
+    </div>
+
+    <div class="overlay" id="admin-login-overlay" hidden>
+      <div class="modal-box modal-sm" style="text-align: center; padding: 2rem">
+        <button
+          class="modal-close-btn"
+          id="admin-login-close"
+          aria-label="Tutup"
+        >
+          <i class="ri-close-line"></i>
+        </button>
+        <div style="font-size: 2.5rem; margin-bottom: 0.75rem">🔐</div>
+        <h3 style="font-family: var(--ff-display); margin-bottom: 0.5rem">
+          Mode Edit Cepat
+        </h3>
+        <p
+          style="
+            color: var(--muted);
+            font-size: 0.875rem;
+            margin-bottom: 1.25rem;
+          "
+        >
+          Masukkan kata sandi untuk mengelola foto anggota dan galeri.
+        </p>
+        <div class="form-group" style="text-align: left">
+          <label for="admin-pass">Kata Sandi</label>
+          <input
+            type="password"
+            id="admin-pass"
+            placeholder="••••••••"
+            autocomplete="current-password"
+          />
+          <span class="field-error" id="admin-pass-err" role="alert"></span>
+        </div>
+        <button
+          class="btn btn-solid w-full"
+          id="admin-login-btn"
+          style="margin-top: 0.25rem"
+        >
+          <i class="ri-login-box-line"></i> Masuk
+        </button>
+        <p style="font-size: 0.72rem; color: var(--muted); margin-top: 0.85rem">
+          Untuk pengelolaan lengkap, gunakan
+          <a href="admin.html" style="color: var(--green); font-weight: 600"
+            >Dashboard Admin</a
+          >
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
